@@ -1,0 +1,120 @@
+/* Reset some default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.header h1 {
+    color: white;
+}
+
+/* Date styles */
+.header h6 {
+    color: white;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.article.big, .article.medium, .sidebar {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.article.big {
+    flex-basis: calc(66.66% - 20px);
+}
+
+.article.medium, .sidebar {
+    flex-basis: calc(33.33% - 20px);
+}
+
+.article img, .pins img {
+    max-width: 100%;
+    height: auto;
+}
+
+.articlecontent, .pins {
+    padding: 15px;
+}
+
+.article h2, .pins h2 {
+    font-size: 18px;
+}
+
+.article p, .pins p {
+    font-size: 14px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    padding: 20px;
+    background-color: white;
+}
+
+/* Footer styles */
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+}
+
+.bottomlinks {
+    width: 30%;
+}
+
+.bottomlinks h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bottomlinks ul {
+    list-style-type: none;
+}
+
+.bottomlinks ul li {
+    margin-bottom: 5px;
+}
+
+.bottomlinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .main-content, .article.big, .article.medium, .sidebar {
+        flex-basis: 100%;
+    }
+    .main-content, .article.big, .article.medium, .sidebar {
+        margin: 100x 0;
+    }
+    .main-content, .article.big, .article.medium, .sidebar {
+        padding: 10px;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+}
